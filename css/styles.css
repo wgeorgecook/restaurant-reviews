@@ -280,7 +280,7 @@ nav h1 a {
 
 /* Tablets */
 @media screen and (max-width: 1367) {
-
+  /* TODO: Make grid for larger screens for the restaurant list display */
 
 /* End tablet media query */
 }
