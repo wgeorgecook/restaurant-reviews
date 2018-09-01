@@ -279,6 +279,11 @@ nav h1 a {
 /* ====================== Responsiveness ====================== */
 
 /* Tablets */
+@media screen and (max-width: 1367) {
+
+
+/* End tablet media query */
+}
 
 /* Cell phones */
 @media screen and (max-width: 824px) {
@@ -287,6 +292,11 @@ nav h1 a {
     width: 100%;
     height: auto;
   }
+
+  #maincontent {
+    width: 100%
+  }
+
   #navigation {
     width: 100%;
     margin: auto;
@@ -298,7 +308,7 @@ nav h1 a {
     margin: auto;
   }
   .filter-options {
-    position: relative;
+    display: block;
     width: 100%;
     height: auto;
     margin: auto;
@@ -308,6 +318,20 @@ nav h1 a {
   #neighborhoods-select, #cuisines-select {
     min-width: 66px;
     height: auto;
+  }
+
+  #restaurants-list {
+    display: grid;
+    grid-template-columns: 80%;
+  }
+
+  #restaurants-list li {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #restaurants-list li a {
+    margin-right: 75%;
   }
 
 /* End cell phone media query */
