@@ -257,9 +257,11 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #f3f3f3;
   width: 90%;
+  padding-left: .25em;
   margin: auto;
   border-radius: 35px 0px;
-  background: linear-gradient(180deg, #252831  12%, #fff 0%)
+  background: linear-gradient(180deg, #252831  13%, #fff 0%);
+  min-height: 300px;
 }
 
 #reviews-list li div {
@@ -298,6 +300,7 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: .25em;
 }
 
 
