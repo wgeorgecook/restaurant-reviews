@@ -252,10 +252,30 @@ nav h1 a {
 #reviews-list li {
   background-color: #fff;
   border: 2px solid #f3f3f3;
-  padding: 0.25em;
   width: 90%;
   margin: auto;
   border-radius: 35px 0px;
+  background: linear-gradient(180deg, #252831  12%, #fff 0%)
+}
+
+#reviews-list li div {
+  padding: 1em;
+}
+
+
+
+
+
+.reviewName {
+  color: white;
+  font-weight: bolder;
+  font-size: 17px;
+  padding-right: 50%;
+}
+
+.reviewDate {
+  color: lightgrey;
+  font-size: 12px;
 }
 
 #restaurant-hours td {
@@ -277,19 +297,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-.review-top {
-  list-style: none;
-  background-color: darkgrey;
-  color: white;
-  border-radius: 35px 0px 0px 0px;
-  margin: 0;
-  padding: 0;
-}
 
-.review-top p {
-  display: inline-block;
-  padding: 30px;
-}
 
 /* ====================== Responsiveness ====================== */
 

@@ -154,14 +154,15 @@ createReviewHTML = (review) => {
   const li = document.createElement('li');
 
   const div = document.createElement('div');
-  div.className = 'review-top';
+  div.className = 'reviewTop';
 
-  const name = document.createElement('p');
+  const name = document.createElement('span');
+  name.className = 'reviewName';
   name.innerHTML = review.name;
   div.appendChild(name);
 
-
-  const date = document.createElement('p');
+  const date = document.createElement('span');
+  date.className = 'reviewDate';
   date.innerHTML = review.date;
   div.appendChild(date);
 
@@ -175,6 +176,7 @@ createReviewHTML = (review) => {
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
   li.appendChild(comments);
+
 
   return li;
 }
