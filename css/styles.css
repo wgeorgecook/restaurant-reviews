@@ -259,23 +259,22 @@ nav h1 a {
 }
 
 #reviews-list li div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 1em;
 }
-
-
-
 
 
 .reviewName {
   color: white;
   font-weight: bolder;
   font-size: 17px;
-  padding-right: 50%;
 }
 
 .reviewDate {
   color: lightgrey;
   font-size: 12px;
+  text-align: right;
 }
 
 #restaurant-hours td {
