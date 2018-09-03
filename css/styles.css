@@ -143,8 +143,10 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
+  width: 90%;
+  padding: .15em;
   margin: auto;
-  min-height: 380px;
+  height: auto;
   text-align: left;
 }
 #restaurants-list .restaurant-img {
@@ -235,6 +237,8 @@ nav h1 a {
   width: 100%;
 }
 
+/* ====================== Reviews Details ====================== */
+
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
@@ -301,13 +305,13 @@ nav h1 a {
 /* ====================== Responsiveness ====================== */
 
 /* Tablets */
-@media screen and (min-width: 416px) {
+@media screen and (min-width: 768px) {
   /* TODO: Make grid for larger screens for the restaurant list display */
 
 
   #restaurants-list, #reviews-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 1em;
     margin: .5em;
   }
@@ -320,35 +324,17 @@ nav h1 a {
 /* End tablet media query */
 }
 
-/* Cell phones */
-@media screen and (max-width: 415) {
+/* Desktop */
+@media screen and (min-width: 1025px) {
 
-  img {
-    width: 100%;
-    height: auto;
-  }
 
-  #maincontent {
-    width: 100%
-  }
-
-  #navigation {
-    width: 100%;
-    margin: auto;
+  #restaurants-list, #reviews-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+    margin: .5em;
   }
 
-  #map-container {
-    width: 100%;
-    height: auto;
-    margin: auto;
-  }
-  .filter-options {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding: .75em;
-  }
 
   #neighborhoods-select, #cuisines-select {
     min-width: 66px;
@@ -356,13 +342,11 @@ nav h1 a {
   }
 
   #restaurants-list li {
-    width: 90%;
+    width: 30%;
+    margin: auto;
     padding: .25em;
   }
 
-  #restaurants-list li a {
-    margin-left: 22%;
-  }
 
-/* End cell phone media query */
+/* End desktop media query */
 }
