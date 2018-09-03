@@ -264,14 +264,27 @@ nav h1 a {
 /* ====================== Responsiveness ====================== */
 
 /* Tablets */
-@media screen and (max-width: 1367) {
+@media screen and (min-width: 416px) {
   /* TODO: Make grid for larger screens for the restaurant list display */
+
+
+  #restaurants-list, #reviews-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+    margin: .5em;
+  }
+
+  #restaurants-list li, #reviews-list li {
+    padding: 1em;
+    height: 500px;
+  }
 
 /* End tablet media query */
 }
 
 /* Cell phones */
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 415) {
 
   img {
     width: 100%;
