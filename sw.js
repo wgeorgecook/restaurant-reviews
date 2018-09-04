@@ -30,14 +30,17 @@ self.addEventListener('install', function(event) {
   );
 });
 
-// Thanks to the Google Developers Tutorials for most of this code snippet!
+// Thanks to the Google Developers Tutorials for helping me understand cache.put!
 // https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+// Code modified to use the recommended cache.add, as well as to return
+// offline.html if no cached asset found.
+
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open('restaurant-cache').then(function(cache) {
       return cache.match(event.request).then(function (response) {
         return response || fetch(event.request).then(function(response) {
-          cache.put(event.request, response.clone());
+          cache.add(event.request);
           return response
         }).catch(function() {return cache.match('/offline.html')});
       });
