@@ -149,13 +149,7 @@ nav h1 a {
   height: auto;
   text-align: left;
 }
-#restaurants-list .restaurant-img {
-  background-color: #ccc;
-  display: block;
-  margin: 0;
-  max-width: 100%;
-  height: auto;
-}
+
 #restaurants-list li h1 {
   color: #f18200;
   font-family: Arial,sans-serif;
@@ -209,11 +203,15 @@ nav h1 a {
   line-height: 1.1;
 }
 .restaurant-img, #restaurant-img {
+  border-radius: 35px 0px;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
   width: 100%;
   height: auto;
-  margin: auto;
-  border-radius: 35px 0px;
 }
+
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
@@ -270,7 +268,6 @@ nav h1 a {
   padding: 1em;
 }
 
-
 .reviewName {
   color: white;
   font-weight: bolder;
@@ -309,7 +306,10 @@ nav h1 a {
 
 /* Tablets */
 @media screen and (min-width: 768px) {
-  /* TODO: Make grid for larger screens for the restaurant list display */
+
+  #restaurant-img {
+    padding: 1em;
+  }
 
 
   #restaurants-list, #reviews-list {
