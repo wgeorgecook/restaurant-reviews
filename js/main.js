@@ -8,7 +8,8 @@ var markers = []
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('js/sw.js')
-    .then(function() {console.log('Registered!')});
+    .then(function() {console.log('Registered!')})
+    .catch(function() {console.log("That didn't work!")});
   });
 }
 
