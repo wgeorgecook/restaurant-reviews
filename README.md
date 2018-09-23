@@ -1,32 +1,18 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Reviews
 
-## Project Overview: Stage 1
+This is project 5 for Udacity's front end nanodegree program. I was given a very poorly designed, inaccessible website and charged with making it responsive, incorporating accessibility guidelines, and coding a service worker to cache pages for offline use after visiting.
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+## Responsiveness
+Page is now designed using mobile first principles. It displays well on small cell phones, large cell phones and tablets, as well as a desktop.
 
-### Specification
+## Accessibility
+We follow a11y guidelines put forth by the [Web Accessibility Initiative](https://www.w3.org/WAI/standards-guidelines/aria/) to help users navigate using screen reader technologies.
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+## Offline First
+This application is also offline first, and will cache assets and serve them when network calls cannot be made.
 
-### What do I do from here?
+## Mapping
+We utilize [leafletjs](https://leafletjs.com/) and [Mapbox](https://www.mapbox.com/) to render and dispaly the mapping application.
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
-
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
-## Leaflet.js and Mapbox:
-
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
-
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
-
-
-
+## Contributing
+This code was submitted for an academic project. Please use it for your benefit, but I will not accept pull requests.
